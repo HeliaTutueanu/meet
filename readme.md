@@ -2,6 +2,7 @@
 
 Welcome to the Meet App! This application is designed to help users discover and manage events easily. Whether you're looking for upcoming events in your city or exploring events across different locations, Meet App has got you covered.
 
+
 ## Features
 
 ### 1. Filter Events By City
@@ -21,6 +22,7 @@ Welcome to the Meet App! This application is designed to help users discover and
   - When they select a city from the suggested list
   - Then they should see events specific to the selected city
 
+
 ### 2. Show/Hide Event Details
 
 - **Scenario 1: Collapsed by Default**
@@ -38,6 +40,7 @@ Welcome to the Meet App! This application is designed to help users discover and
   - When they choose to collapse event details
   - Then they should see a condensed view of the event list
 
+
 ### 3. Specify Number of Events
 
 - **Scenario 1: Default Display**
@@ -49,6 +52,7 @@ Welcome to the Meet App! This application is designed to help users discover and
   - Given the user has specified a custom number of events
   - When they view the events
   - Then they should see the specified number of events
+
 
 ### 4. Use the App When Offline
 
@@ -62,6 +66,7 @@ Welcome to the Meet App! This application is designed to help users discover and
   - When they attempt to change search settings (city, number of events)
   - Then they should see an error message indicating the changes can't be applied without an internet connection
 
+
 ### 5. Add an App Shortcut to the Home Screen
 
 - **Scenario 1: Install Shortcut**
@@ -69,12 +74,14 @@ Welcome to the Meet App! This application is designed to help users discover and
   - When they choose to install the Meet App as a shortcut
   - Then they should see the Meet App shortcut added to their home screen
 
+
 ### 6. Display Charts Visualizing Event Details
 
 - **Scenario 1: City-wise Event Chart**
   - Given the user is viewing a chart with upcoming events in each city
   - When they analyze the chart
   - Then they should be able to easily identify cities with a high concentration of events
+
 
 ## Getting Started
 

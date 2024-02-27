@@ -3,6 +3,7 @@ import App from '../App';
 
 describe('<App /> component', () => {
   let AppDOM;
+
   beforeEach(() => {
     AppDOM = render(<App />).container.firstChild;
   })
@@ -13,5 +14,10 @@ describe('<App /> component', () => {
 
   test('render CitySearch', () => {
     expect(AppDOM.querySelector('#city-search')).toBeInTheDocument();
+  });
+
+  test('renders NumberOfEvents component', () => {
+    const numberOfEventsElement = AppDOM.querySelector('#number-of-events');
+    expect(numberOfEventsElement).toBeInTheDocument();
   });
 });

@@ -1,20 +1,14 @@
-import { render } from '@testing-library/react';
-import EventList from '../components/EventList';
+import Event from "./Event";
 
-describe('<EventList /> component', () => {
- let EventListComponent;
- beforeEach(() => {
-   EventListComponent = render(<EventList />);
- })
+const EventList = ({ events }) => {
+  
+ return (
+   <ul id="event-list">
+     {events ?
+       events.map(event => <Event key={event.id} event={event} />) :
+       null}
+   </ul>
+ );
+}
 
- test('has an element with "list" role', () => {
-   expect(EventListComponent.queryByRole("list")).toBeInTheDocument();
- });
-
- test('renders correct number of events', () => {
-   EventListComponent.rerender(<EventList events={
-     [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }]
-   } />);
-   expect(EventListComponent.getAllByRole("listitem")).toHaveLength(4);
- });
-});
+export default EventList;

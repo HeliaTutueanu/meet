@@ -90,13 +90,13 @@ To get started with the Meet App, follow these steps:
 1. Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/meet-app.git
+git clone https://github.com/your-username/meet.git
 ```
 
 2. Install dependencies.
 
 ```bash
-cd meet-app
+cd meet
 npm install
 ```
 

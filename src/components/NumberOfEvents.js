@@ -1,8 +1,18 @@
-const NumberOfEvents = ({ setCurrentNOE }) => {
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   const handleInputChanged = (event) => {
     const value = event.target.value;
+
+    let errorText;
+    if (value <= 0) {
+        errorText = "The number must be higher than 0."
+    } else {
+        errorText = ""
+    }
+
     setCurrentNOE(value);
-  };
+    setErrorAlert(errorText);
+};
+
 
   return (
     <div id="number-of-events">

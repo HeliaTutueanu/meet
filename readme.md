@@ -1,6 +1,6 @@
 # Meet App
 
-Welcome to the Meet App! This application is designed to help users discover and manage events easily. Whether you're looking for upcoming events in your city or exploring events across different locations, Meet App has got you covered.
+Welcome to the Meet App! This application is designed to help users discover and manage city events easily. Whether you're looking for upcoming events in your city or exploring events across different locations, Meet App has got you covered.
 
 
 ## Features
